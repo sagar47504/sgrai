@@ -255,7 +255,7 @@ async function callChatGPT(symbol, timeframe, type, retries = 3, delay = 1000) {
                         role: "system",
                         content: `You are a crypto trading bot. Analyze ${symbol} ${timeframe} data and strictly respond in JSON format:
                     - If a trade is valid: { "trade": true, "entry": number, "stoploss": number, "target": number }
-                    - If no trade: { "trade": false, "reason": "Brief explanation" }
+                    - If no trade: { "trade": false, "reason": "Brief explanation" } then next time to trade and when to trade
                     Base decisions on price action, support/resistance, and trend.`
                     },
                     {
