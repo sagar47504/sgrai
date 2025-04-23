@@ -298,7 +298,7 @@ function nowunixTimestamp() {
 }
 
 function yesterdayUnixTimestamp() {
-    return nowunixTimestamp() - (86400 * 5);
+    return nowunixTimestamp() - (86400 * 2);
 }
 
 app.listen(port, () => {
